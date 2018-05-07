@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Proza+Libre:600" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Zachary Guns</title>
+</head>
+<body>
+    <nav>
+        <div id="navdiv">
+                <p class="navname">Zachary Guns</p>
+            <ul>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="index.html">About</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <h1>Portfolio</h1>
+        <div class="frame1">
+            <img id="pimg1" src="assets/images/Jedi Force.jpg" alt="Jedi GATORADE label" width="300">
+        </div>
+        <div class="frame2">
+            <img id="pimg2" src="assets/images/Sith Force.jpg" alt="Sith GATORADE label" width="300">
+        </div>
+        <div class="frame3">
+            <img id="pimg3" src="assets/images/Emmy.jpg" alt="Photoshop double exposure 1" height="300">
+        </div>
+        <div class="frame4">
+            <img id="pimg4" src="assets/images/Myles.jpg" alt="Photoshop double exposure 2" height=300px>
+        </div>
+        <div class="frame5">
+            <img id="pimg5" src="assets/images/Candle and Fruits.jpg" alt="Still life digital painting" height=300px>
+        </div>
+        <div class="frame6">
+            <img id="pimg6" src="assets/images/Rumpelstiltskin.jpg" alt="Rumpelstiltskin digital painting" width=300px>
+        </div>
+
+    </div>  
+    
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="pimg01">
+    <img class="modal-content" id="pimg02">
+    <img class="modal-content" id="pimg03">
+    <img class="modal-content" id="pimg04">
+    <img class="modal-content" id="pimg05">
+    <img class="modal-content" id="pimg06">
+    <div id="caption"></div>
+    </div>
+    <script>
+            // Get the modal
+            var modal = document.getElementById('myModal');
+            
+            // Get the image and insert it inside the modal - use its "alt" text as a caption
+            var img = document.getElementById('pimg1');
+            var modalImg = document.getElementById("pimg01");
+            var captionText = document.getElementById("caption");
+            img.onclick = function(){
+                modal.style.display = "block";
+                modalImg.src = this.src;
+                captionText.innerHTML = this.alt;
+            }
+
+            var img = document.getElementById('pimg2');
+            var modalImg = document.getElementById("pimg02");
+            var captionText = document.getElementById("caption");
+            img.onclick = function(){
+                modal.style.display = "block";
+                modalImg.src = this.src;
+                captionText.innerHTML = this.alt;
+            }
+
+            var img = document.getElementById('pimg3');
+            var modalImg = document.getElementById("pimg03");
+            var captionText = document.getElementById("caption");
+            img.onclick = function(){
+                modal.style.display = "block";
+                modalImg.src = this.src;
+                captionText.innerHTML = this.alt;
+            }
+
+            var img = document.getElementById('pimg4');
+            var modalImg = document.getElementById("pimg04");
+            var captionText = document.getElementById("caption");
+            img.onclick = function(){
+                modal.style.display = "block";
+                modalImg.src = this.src;
+                captionText.innerHTML = this.alt;
+            }
+
+            var img = document.getElementById('pimg5');
+            var modalImg = document.getElementById("pimg05");
+            var captionText = document.getElementById("caption");
+            img.onclick = function(){
+                modal.style.display = "block";
+                modalImg.src = this.src;
+                captionText.innerHTML = this.alt;
+            }
+
+            var img = document.getElementById('pimg6');
+            var modalImg = document.getElementById("pimg06");
+            var captionText = document.getElementById("caption");
+            img.onclick = function(){
+                modal.style.display = "block";
+                modalImg.src = this.src;
+                captionText.innerHTML = this.alt;
+            }
+            
+            // Get the <span> element that closes the modal
+            var span = document.getElementsByClassName("close")[0];
+            
+            // When the user clicks on <span> (x), close the modal
+            span.onclick = function() { 
+                modal.style.display = "none";
+            }
+    </script>
+
+    <footer class="footer">
+        Thanks for visiting!
+    </footer>
+</body>
+</html>
